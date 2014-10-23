@@ -43,9 +43,7 @@ class Route
             $search = '/' . str_replace(['<', '>', '/'], ['(?\'', '\'[0-9a-z\-]*)', '\/'], $r) . '$/';
 
             if ( preg_match($search, $route, $matches) ) {
-                $matches = $this->arrangeVars($matches);
-
-                $this->routes[$r]['data'] = $matches;
+                $this->routes[$r]['data'] = $this->arrangeVars($matches);
                 return $this->routes[$r];
             }
         }
