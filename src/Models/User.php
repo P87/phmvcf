@@ -16,8 +16,6 @@ class User extends DORM
     /** @Column(type="string") **/
     protected $password;
     
-    private $salt = '';
-    
     public function getId()
     {
     	return $this->id;
