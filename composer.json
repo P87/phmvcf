@@ -9,7 +9,9 @@
       "email": "code@peterhul.me"
     }
   ],
-  "require": {},
+  "require": {
+    "doctrine/orm": "2.4.*"
+  },
   "require-dev": {
     "phpunit/phpunit": "4.0.*"
   },
