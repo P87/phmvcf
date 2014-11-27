@@ -39,6 +39,13 @@ class View
         return $this;
     }
 
+    /**
+     * Generate content for a view (Usually none-template)
+     *
+     * @param $view
+     * @param $data
+     * @return string
+     */
     public static function view($view, $data)
     {
         extract($data);
