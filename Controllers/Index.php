@@ -2,7 +2,8 @@
 
 namespace P87\PHMVCF\Controllers;
 
-use P87\PHMVCF\App\View;
+use P87\PHMVCFCore\App\View;
+use P87\PHMVCFCore\App\Session;
 use P87\PHMVCF\Models;
 
 class Index extends Controller

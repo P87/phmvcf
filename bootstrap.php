@@ -7,7 +7,7 @@ define('ROOT_DIR', realpath(__DIR__) . '/');
 
 if ( PHP_SAPI != 'cli' ) {
     
-    require_once(ROOT_DIR . 'routes.php');
+    require_once(ROOT_DIR . '/routes.php');
 
     if ( $theRoute = $appRoute->decide($route) ) {
         $controller = 'P87\PHMVCF\Controllers\\' . $theRoute['controller'];

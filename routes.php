@@ -1,8 +1,5 @@
 <?php
-
-use P87\PHMVCF\App as App;
-
-$appRoute = new App\Route();
+$appRoute = new \P87\PHMVCFCore\App\Route();
 
 $appRoute
     ->set('user/show/<id>/<name>', [
